@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hamburgeria</title>
+</head>
+
+<body>
+
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-topmiddle w3-jumbo">
+            <p>Hamburgeria</p>
+        </div>
+
+        <div class="w3-display-topright w3-container w3-xlarge">
+            <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-deep-orange"> menu
+                </button></p>
+            <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-deep-orange">
+                    prenota </button></p>
+        </div>
+
+        <div class="w3-display-bottomright w3-container">
+            <p class="w3-xlarge"> martedì-sabato 10-23 | domenica 14-02 </p>
+            <p class="w3-large"> Via Mario Rossi 123, Roma </p>
+            <p> powered by <a href="#" target="_blank"> W3.CSS </a></p>
+        </div>
+    </div>
+
+    <!-- Menu Modal -->
+
+    <div id="menu" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('menu').style.display='none'"
+                    class="w3-button w3-display-topright w3-large"> X </span>
+                <h1> I Classici </h1>
+            </div>
+            <div class="w3-container">
+                <h5> Lorem <b> € 4 </b></h5>
+                <h5> Ipsum <b> € 5.50 </b></h5>
+                <h5> Amet <b> € 6.50 </b></h5>
+            </div>
+            <div class="w3-container w3-black">
+                <h1> I Contemporanei </h1>
+            </div>
+            <div class="w3-container">
+                <h5> Lorem <b> € 7 </b></h5>
+                <h5> Ipsum <b> € 8.50 </b></h5>
+                <h5> Amet <b> € 9.50 </b></h5>
+                <h5> Dolor <b> € 11 </b></h5>
+                <h5> Sit <b> € 13 </b></h5>
+            </div>
+            <div class="w3-container w3-black">
+                <h1> Gli sfiziosi </h1>
+            </div>
+            <div class="w3-container">
+                <h5> Lorem <b> € 14 </b></h5>
+                <h5> Ipsum <b> € 15.50 </b></h5>
+                <h5> Amet <b> € 16.50 </b></h5>
+                <h5> Dolor <b> € 18 </b></h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('contact').style.display='none'"
+                    class="w3-button w3-display-topright w3-large"> X </span>
+                <h1> Prenota il tuo tavolo qui: </h1>
+            </div>
+            <div class="w3-container">
+                <p>Lorem ipsum dolor sit amet. </p>
+                <form action="#" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required
+                            name="Nome"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Numero di persone"
+                            required name="Persone"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Data e Ora"
+                            required name="Data" value="2023-06-07T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Allergie/Intolleranze"
+                            required name="Messaggio"></p>
+                    <p><button class="w3-button" type="submit"> PRENOTA </button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
